@@ -1,0 +1,26 @@
+Console.WriteLine("Ingresa 5 numeros");
+int num1 = Convert.ToInt32(Console.ReadLine());
+int num2 = Convert.ToInt32(Console.ReadLine());
+int num3 = Convert.ToInt32(Console.ReadLine());
+int num4 = Convert.ToInt32(Console.ReadLine());
+int num5 = Convert.ToInt32(Console.ReadLine());
+
+int[] numeros = new int[] { num1, num2, num3, num4, num5 };
+
+int positivos = 0;
+int negativos = 0;
+int ceros = 0;
+
+foreach (int i in numeros)
+{
+    if (i > 0) positivos++;
+
+    else if (i < 0) negativos++;
+
+    else ceros++;           
+}
+
+Console.WriteLine("\nResultados");
+Console.WriteLine("Los numeros positivos son: "+ positivos);
+Console.WriteLine("Los numeros negativos son: "+ negativos);
+Console.WriteLine("Los numeros iguales a 0 son: " + ceros);
